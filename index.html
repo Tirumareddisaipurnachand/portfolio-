@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en" style="width: 1280px; height: 5221px; overflow: hidden; position: relative;">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Aaabad Ahmed - Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "deep-onyx": "#151312",
+                        "surface-container-highest": "#373433",
+                        "surface-container-low": "#1d1b1a",
+                        "on-secondary-fixed": "#380c00",
+                        "surface": "#151312",
+                        "inverse-surface": "#e7e1df",
+                        "on-error-container": "#ffdad6",
+                        "acid-lime": "#C5FF41",
+                        "secondary-fixed": "#ffdbcf",
+                        "error": "#ffb4ab",
+                        "pure-white": "#FFFFFF",
+                        "surface-container-lowest": "#100e0d",
+                        "primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#822800",
+                        "primary-fixed-dim": "#a1d80e",
+                        "surface-container": "#211f1e",
+                        "tertiary-fixed": "#f0dcf6",
+                        "surface-bright": "#3b3937",
+                        "on-primary-fixed-variant": "#384e00",
+                        "tertiary-container": "#f0dcf6",
+                        "on-tertiary-fixed-variant": "#504256",
+                        "surface-container-high": "#2c2928",
+                        "tertiary": "#ffffff",
+                        "on-surface": "#e7e1df",
+                        "surface-dim": "#151312",
+                        "on-primary": "#253500",
+                        "secondary": "#ffb59c",
+                        "secondary-container": "#aa3701",
+                        "tertiary-fixed-dim": "#d4c0d9",
+                        "surface-tint": "#a1d80e",
+                        "on-error": "#690005",
+                        "burnt-orange": "#F46C38",
+                        "muted-gray": "#998F8F",
+                        "inverse-on-surface": "#32302f",
+                        "on-tertiary": "#392c3f",
+                        "primary-container": "#bcf537",
+                        "outline": "#8d937b",
+                        "secondary-fixed-dim": "#ffb59c",
+                        "on-surface-variant": "#c3c9af",
+                        "background": "#151312",
+                        "on-primary-container": "#506e00",
+                        "on-tertiary-container": "#6f5f75",
+                        "on-background": "#e7e1df",
+                        "surface-variant": "#373433",
+                        "on-tertiary-fixed": "#231729",
+                        "inverse-primary": "#4b6700",
+                        "on-secondary": "#5c1a00",
+                        "outline-variant": "#434935",
+                        "error-container": "#93000a",
+                        "on-secondary-container": "#ffcebd",
+                        "primary-fixed": "#bcf537",
+                        "on-primary-fixed": "#141f00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px",
+                        "section-gap": "120px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "display-xl": ["Plus Jakarta Sans"],
+                        "label-sm": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-xl-mobile": ["Plus Jakarta Sans"],
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {
+                            "lineHeight": "32px",
+                            "fontWeight": "600"
+                        }],
+                        "display-xl": ["72px", {
+                            "lineHeight": "80px",
+                            "letterSpacing": "-0.04em",
+                            "fontWeight": "800"
+                        }],
+                        "label-sm": ["12px", {
+                            "lineHeight": "16px",
+                            "fontWeight": "600"
+                        }],
+                        "label-md": ["14px", {
+                            "lineHeight": "20px",
+                            "letterSpacing": "0.02em",
+                            "fontWeight": "500"
+                        }],
+                        "body-lg": ["18px", {
+                            "lineHeight": "28px",
+                            "fontWeight": "400"
+                        }],
+                        "display-xl-mobile": ["48px", {
+                            "lineHeight": "52px",
+                            "letterSpacing": "-0.02em",
+                            "fontWeight": "800"
+                        }],
+                        "body-md": ["16px", {
+                            "lineHeight": "24px",
+                            "fontWeight": "400"
+                        }],
+                        "headline-lg-mobile": ["32px", {
+                            "lineHeight": "38px",
+                            "fontWeight": "700"
+                        }],
+                        "headline-lg": ["40px", {
+                            "lineHeight": "48px",
+                            "letterSpacing": "-0.02em",
+                            "fontWeight": "700"
+                        }]
+                    }
+                },
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #151312;
+            color: #e7e1df;
+        }
+
+        .glass-panel {
+            background: rgba(33, 31, 30, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(153, 143, 143, 0.1);
+        }
+
+        /* Keyframes */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                box-shadow: 0 0 0 0 rgba(197, 255, 65, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(197, 255, 65, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(197, 255, 65, 0);
+            }
+        }
+
+        @keyframes glow-line {
+            0% {
+                width: 0%;
+                left: 0;
+            }
+
+            50% {
+                width: 100%;
+                left: 0;
+            }
+
+            100% {
+                width: 0%;
+                left: 100%;
+            }
+        }
+
+        /* Utility classes */
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .animate-pulse-ring:focus-within {
+            animation: pulse-ring 1.5s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+        }
+
+        .animate-pulse-hover:hover {
+            animation: pulse-ring 1.5s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+        }
+
+        /* Scroll Animation Classes */
+        .scroll-hidden {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .scroll-show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .progress-line-container.scroll-show .progress-line-anim {
+            animation: glow-line 3s ease-in-out infinite;
+        }
+
+        /* Staggered text delays */
+        .stagger-1 {
+            transition-delay: 100ms;
+        }
+
+        .stagger-2 {
+            transition-delay: 200ms;
+        }
+
+        .stagger-3 {
+            transition-delay: 300ms;
+        }
+
+        .stagger-4 {
+            transition-delay: 400ms;
+        }
+
+        /* Canvas */
+        #trailCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            /* Above background, below content */
+        }
+
+        /* Content z-index adjustment */
+        nav,
+        main,
+        footer {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Spotlight Effect */
+        .spotlight-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .spotlight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle 300px at var(--mouse-x) var(--mouse-y), rgba(0, 242, 255, 0.05), rgba(188, 19, 254, 0.05), transparent 40%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .spotlight-card:hover::before {
+            opacity: 1;
+        }
+
+        /* Specific Focus Card Spotlight */
+        .focus-card::before {
+            background: radial-gradient(circle 400px at var(--mouse-x) var(--mouse-y), rgba(0, 242, 255, 0.1), rgba(188, 19, 254, 0.1), transparent 40%);
+        }
+    </style>
+</head>
+
+<body class="bg-deep-onyx text-on-background antialiased selection:bg-acid-lime selection:text-deep-onyx">
+    <canvas height="5754" id="trailCanvas" width="1280"></canvas>
+    <!-- TopNavBar -->
+    <nav class="docked full-width top-0 sticky z-50 bg-deep-onyx/80 dark:bg-deep-onyx/80 backdrop-blur-md border-b border-muted-gray/10">
+        <div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-7xl mx-auto">
+            <a class="font-display-xl text-headline-md font-extrabold tracking-tighter text-pure-white dark:text-pure-white scale-95 active:scale-90 transition-transform" href="#">TIRUMAREDDI&nbsp; SAIPURNACHAND</a>
+            <div class="hidden md:flex items-center gap-8" id="nav-menu">
+                <a class="nav-link font-label-md text-label-md hover:text-pure-white transition-colors duration-300 text-muted-gray" href="#projects">Projects</a>
+                <a class="nav-link font-label-md text-label-md hover:text-pure-white transition-colors duration-300 text-muted-gray" href="#current-focus">Focus</a>
+                <a class="nav-link font-label-md text-label-md hover:text-pure-white transition-colors duration-300 text-muted-gray" href="#skills">Tools</a>
+                <a class="nav-link font-label-md text-label-md text-muted-gray hover:text-pure-white transition-colors duration-300" href="#thoughts">Thoughts</a>
+            </div>
+            <a class="hidden md:inline-flex items-center justify-center bg-acid-lime text-deep-onyx font-label-md text-label-md px-6 py-2 rounded-full hover:scale-105 transition-transform duration-300 font-bold animate-pulse-hover" href="#contact">
+                Let's Collab!
+            </a>
+            <button class="md:hidden text-pure-white" id="mobile-menu-btn">
+                <span class="material-symbols-outlined" data-icon="menu">menu</span>
+            </button>
+        </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop w-full overflow-hidden relative z-10">
+        <!-- Hero Section -->
+        <section class="py-section-gap flex flex-col items-center justify-center min-h-[80vh] relative scroll-hidden scroll-show" id="hero">
+            <div class="absolute inset-0 z-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at 50% 50%, rgba(197, 255, 65, 0.15) 0%, transparent 60%);"></div>
+            <div class="relative z-10 text-center w-full max-w-4xl mx-auto flex flex-col items-center">
+                <h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-pure-white uppercase mb-6 tracking-tighter">
+                    <span class="inline-block scroll-hidden stagger-1 scroll-show">ASPIRING</span><br>
+                    <span class="inline-block scroll-hidden stagger-2 text-transparent bg-clip-text bg-gradient-to-r from-acid-lime to-pure-white scroll-show">FULL-STACK DEV</span>
+                </h1>
+                <p class="font-body-lg text-body-lg text-muted-gray max-w-2xl mx-auto mb-12 scroll-hidden stagger-3 scroll-show"><span class="" style="caret-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-family: -webkit-standard; font-size: medium; text-align: start;">Passionate about turning ideas into meaningful digital experiences — learning, building, and constantly evolving through code. Currently a BTech student and NxtWave Fellow, building a strong foundation in software development while exploring full-stack development and open source.</span></p>
+                <div><span style="caret-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-family: -webkit-standard; font-size: medium;" class="">&nbsp;-student at ANITS</span>
+                    <div>
+                        <div><span class="" style="caret-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-family: -webkit-standard; font-size: medium; text-align: start;"><br></span></div>
+                    </div>
+                </div>
+                <p class=""></p>
+                <div class="w-full max-w-md aspect-[4/5] rounded-2xl overflow-hidden glass-panel p-2 mb-12 hover:border-acid-lime transition-colors duration-500 animate-float scroll-hidden stagger-4 scroll-show">
+                    <img alt="Aaabad Ahmed" class="w-full h-full object-cover rounded-xl filter grayscale hover:grayscale-0 transition-all duration-500" data-alt="A striking, high-contrast black and white portrait of a modern software engineer, dramatically lit against a deep noir background, embodying a sleek, professional tech aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnLRPlDAM_uXerDhTESNVvVYQqdhmR5uuo814C5DV27Q1Q5l4kYYSd-JyQFoxpq-CS-zaer7C6fWShayWs5GuxeV5K1dIgaL3K8_F0RvznF_q_Lr3XNiWOdd1PS-HWP55Jc5Ye9Xsn7tB3o0t3VuBqcQoglT_z3n8nuvkU-ytpNNodUFgRklOW7FeATebXKvJd18aovPn-0r3HtXe6Wu56Ml1E2u1N1jvnHEL5RHAsNnrkqKLB_jXP7Q">
+                </div>
+            </div>
+            <!-- Stats Bento -->
+            <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-gutter relative z-10 mt-12 scroll-hidden stagger-3 scroll-show">
+                <!-- Card 1: Currently Learning -->
+                <div class="glass-panel rounded-xl p-6 flex flex-col items-start justify-between hover:border-[#00f2ff]/50 hover:shadow-[0_0_20px_rgba(0,242,255,0.1)] hover:scale-[1.02] transition-all duration-300 group">
+                    <div class="flex justify-between items-start w-full mb-4">
+                        <span class="font-label-sm text-label-sm text-muted-gray uppercase tracking-widest">Currently Learning</span>
+                        <span class="material-symbols-outlined text-[#00f2ff] opacity-70 group-hover:opacity-100 transition-opacity" data-icon="menu_book">menu_book</span>
+                    </div>
+                    <p class="font-headline-md text-headline-md text-pure-white">Full-Stack Development</p>
+                </div>
+                <!-- Card 2: Building With -->
+                <div class="glass-panel rounded-xl p-6 flex flex-col items-start justify-between hover:border-[#bc13fe]/50 hover:shadow-[0_0_20px_rgba(188,19,254,0.1)] hover:scale-[1.02] transition-all duration-300 group">
+                    <div class="flex justify-between items-start w-full mb-4">
+                        <span class="font-label-sm text-label-sm text-muted-gray uppercase tracking-widest">Building With</span>
+                        <span class="material-symbols-outlined text-[#bc13fe] opacity-70 group-hover:opacity-100 transition-opacity" data-icon="construction">construction</span>
+                    </div>
+                    <p class="font-headline-md text-headline-md text-pure-white">Code • Projects • Curiosity</p>
+                </div>
+                <!-- Card 3: Focusing On -->
+                <div class="glass-panel rounded-xl p-6 flex flex-col items-start justify-between hover:border-[#00f2ff]/50 hover:shadow-[0_0_20px_rgba(0,242,255,0.1)] hover:scale-[1.02] transition-all duration-300 group">
+                    <div class="flex justify-between items-start w-full mb-4">
+                        <span class="font-label-sm text-label-sm text-muted-gray uppercase tracking-widest">Focusing On</span>
+                        <span class="material-symbols-outlined bg-gradient-to-br from-[#00f2ff] to-[#bc13fe] bg-clip-text text-transparent opacity-70 group-hover:opacity-100 transition-opacity" data-icon="auto_awesome">auto_awesome</span>
+                    </div>
+                    <p class="font-headline-md text-headline-md text-pure-white">Learning • Problem Solving • Growth</p>
+                </div>
+            </div>
+        </section>
+        <!-- Current Focus Section -->
+        <section class="py-section-gap scroll-hidden scroll-show scroll-mt-[100px]" id="current-focus">
+            <div class="flex flex-col mb-12">
+                <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-pure-white uppercase tracking-tighter">
+                    CURRENT<br><span class="text-muted-gray">FOCUS</span>
+                </h2>
+                <p class="font-body-lg text-body-lg text-muted-gray mt-4 max-w-2xl">Learning. Building. Contributing.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+                <!-- Card 1 -->
+                <div class="spotlight-card focus-card bg-surface-container-lowest border border-muted-gray/20 rounded-sm p-8 flex flex-col justify-between hover:-translate-y-1 hover:border-[#00f2ff]/50 hover:shadow-[0_0_30px_rgba(0,242,255,0.15)] transition-all duration-500 group h-full" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 343px; --mouse-y: 212.901123046875px;">
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-8">
+                            <span class="font-mono text-3xl font-bold text-muted-gray/30 group-hover:text-[#00f2ff]/30 transition-colors">01</span>
+                            <span class="font-mono text-[10px] tracking-widest text-pure-white bg-surface-container-highest border border-muted-gray/20 px-2 py-1 rounded-sm uppercase">BUILDING</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-pure-white mb-2 group-hover:text-[#00f2ff] transition-colors">Building with Code</h3>
+                        <p class="font-mono text-[11px] text-[#00f2ff] uppercase tracking-widest mb-4">FULL-STACK DEVELOPMENT</p>
+                        <p class="font-body-md text-body-md text-muted-gray leading-relaxed">Learning full-stack development by building practical projects and strengthening my foundations in frontend, backend, databases, and programming.</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="spotlight-card focus-card bg-surface-container-lowest border border-muted-gray/20 rounded-sm p-8 flex flex-col justify-between hover:-translate-y-1 hover:border-[#bc13fe]/50 hover:shadow-[0_0_30px_rgba(188,19,254,0.15)] transition-all duration-500 group h-full" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 219.671875px; --mouse-y: 274.599365234375px;">
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-8">
+                            <span class="font-mono text-3xl font-bold text-muted-gray/30 group-hover:text-[#bc13fe]/30 transition-colors">02</span>
+                            <span class="font-mono text-[10px] tracking-widest text-pure-white bg-surface-container-highest border border-muted-gray/20 px-2 py-1 rounded-sm uppercase">EXPLORING</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-pure-white mb-2 group-hover:text-[#bc13fe] transition-colors">Exploring Open Source</h3>
+                        <p class="font-mono text-[11px] text-[#bc13fe] uppercase tracking-widest mb-4">GSOC</p>
+                        <p class="font-body-md text-body-md text-muted-gray leading-relaxed">Exploring GSoC, discovering organizations, understanding real-world codebases, and preparing to make meaningful open-source contributions.</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="spotlight-card focus-card bg-surface-container-lowest border border-muted-gray/20 rounded-sm p-8 flex flex-col justify-between hover:-translate-y-1 hover:border-[#00f2ff]/50 hover:shadow-[0_0_30px_rgba(0,242,255,0.15)] transition-all duration-500 group h-full" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 268.3359375px; --mouse-y: 16.0408935546875px;">
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-8">
+                            <span class="font-mono text-3xl font-bold text-muted-gray/30 group-hover:text-[#00f2ff]/30 transition-colors">03</span>
+                            <span class="font-mono text-[10px] tracking-widest text-pure-white bg-surface-container-highest border border-muted-gray/20 px-2 py-1 rounded-sm uppercase">NEXT STEP</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-pure-white mb-2 group-hover:text-[#00f2ff] transition-colors">Preparing to Contribute</h3>
+                        <p class="font-mono text-[11px] text-[#00f2ff] uppercase tracking-widest mb-4">OPEN SOURCE</p>
+                        <p class="font-body-md text-body-md text-muted-gray leading-relaxed">Learning how open-source communities work, improving Git and GitHub skills, studying existing projects, and working toward my first meaningful contributions.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Progression Indicator -->
+            <div class="mt-12 flex flex-col items-center justify-center progress-line-container scroll-hidden scroll-show">
+                <div class="font-mono text-[12px] text-muted-gray uppercase tracking-widest flex items-center gap-4 mb-4">
+                    <span class="hover:text-[#00f2ff] transition-colors cursor-default">LEARN</span>
+                    <span class="text-muted-gray/30">→</span>
+                    <span class="hover:text-[#bc13fe] transition-colors cursor-default">EXPLORE</span>
+                    <span class="text-muted-gray/30">→</span>
+                    <span class="hover:text-[#00f2ff] transition-colors cursor-default">CONTRIBUTE</span>
+                </div>
+                <div class="w-full max-w-md h-[1px] bg-muted-gray/20 relative overflow-hidden">
+                    <div class="absolute top-0 h-full bg-gradient-to-r from-transparent via-[#00f2ff] to-[#bc13fe] progress-line-anim"></div>
+                </div>
+            </div>
+        </section>
+        <!-- My Journey Section -->
+        <section class="py-section-gap scroll-hidden scroll-show scroll-mt-[100px]" id="journey">
+            <div class="flex flex-col mb-12">
+                <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-pure-white uppercase tracking-tighter">
+                    MY<br><span class="text-muted-gray">JOURNEY</span>
+                </h2>
+            </div>
+            <div class="flex flex-col gap-6 relative z-10">
+                <!-- Card 1 -->
+                <div class="spotlight-card focus-card bg-surface-container-lowest border border-muted-gray/20 rounded-sm p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:-translate-y-1 hover:border-[#00f2ff]/50 hover:shadow-[0_0_30px_rgba(0,242,255,0.15)] transition-all duration-500 group w-full" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 652px; --mouse-y: 134.5px;">
+                    <div class="relative z-10 flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-headline-md text-headline-md text-pure-white group-hover:text-[#00f2ff] transition-colors">01 NXTWAVE</h3>
+                            <span class="font-mono text-[10px] tracking-widest text-[#00f2ff] font-bold uppercase drop-shadow-[0_0_8px_rgba(0,242,255,0.5)]">● CURRENT</span>
+                        </div>
+                        <p class="font-mono text-[11px] text-muted-gray uppercase tracking-widest mb-4">Fellowship Program</p>
+                        <p class="font-body-md text-body-md text-muted-gray leading-relaxed mb-4">Currently developing my programming and software development fundamentals through structured learning, hands-on practice, and projects.</p>
+                        <p class="font-mono text-[11px] text-muted-gray/80 uppercase tracking-widest">2026 — PRESENT | LEARNING • BUILDING • GROWING</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="spotlight-card focus-card bg-surface-container-lowest border border-muted-gray/20 rounded-sm p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 hover:-translate-y-1 hover:border-[#bc13fe]/50 hover:shadow-[0_0_30px_rgba(188,19,254,0.15)] transition-all duration-500 group w-full" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 677px; --mouse-y: 183.5px;">
+                    <div class="relative z-10 flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-headline-md text-headline-md text-pure-white group-hover:text-[#bc13fe] transition-colors">02 GSOC / OPEN SOURCE</h3>
+                            <span class="font-mono text-[10px] tracking-widest text-pure-white bg-surface-container-highest border border-muted-gray/20 px-2 py-1 rounded-sm uppercase">EXPLORING</span>
+                        </div>
+                        <p class="font-mono text-[11px] text-muted-gray uppercase tracking-widest mb-4">Goal &amp; Exploration</p>
+                        <p class="font-body-md text-body-md text-muted-gray leading-relaxed mb-4">Exploring GSoC, discovering organizations, and preparing to make meaningful open-source contributions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Recent Projects Section -->
+        <section class="py-section-gap relative scroll-hidden scroll-show scroll-mt-[100px]" id="projects">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+                <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-pure-white uppercase tracking-tighter">
+                    Recent<br><span class="text-muted-gray">Projects</span>
+                </h2>
+                <a class="mt-4 md:mt-0 font-label-sm text-label-sm text-acid-lime uppercase tracking-widest hover:text-pure-white transition-colors flex items-center gap-2 group" href="#">
+                    View All <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Foodioo Project Card -->
+                <div class="group spotlight-card flex flex-col justify-between relative overflow-hidden rounded-2xl glass-panel p-4 hover:border-[#00f2ff]/50 hover:-translate-y-1 transition-all duration-500 w-full border border-muted-gray/10" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 441px; --mouse-y: 290px;">
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="font-mono text-[10px] tracking-widest text-[#bc13fe] uppercase bg-[#bc13fe]/10 px-2 py-1 rounded">01 / FRONTEND</span>
+                        </div>
+                        <div class="aspect-[2/1] w-full rounded-xl overflow-hidden mb-6 relative border border-muted-gray/10">
+                            <div class="absolute inset-0 bg-deep-onyx/40 group-hover:bg-transparent transition-colors z-10 duration-500 pointer-events-none"></div>
+                            <img alt="FOODIOO" class="w-full h-full object-cover object-top transform group-hover:scale-[1.02] transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmIcONKD110YGKb5LUoCdH-qUhEynuKgRW-d5dgdq-ccoyWR7kycUMeiV50duY6VUVAGHjhQROwhqyyoqy8GHW7p1WmkYJ-BZq02GaiBoCWktc4az8vrBdHcb__G0Dat3NDk2HLZhEktK1BMX_rhEQyqeOgL6VROBMHBVl8KN3oCil5rgX-ZBcK2iQ4M5-B_w6Ssi_1RY1ujipCa9qxo5c7xiUE1MrrRJO7fSVbr9Evk849B71mHf-jEuhGgJAEjNYx8NwgKfUPWqpntg">
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-end px-2 gap-4">
+                            <div>
+                                <h3 class="font-headline-md text-headline-md text-pure-white mb-1">FOODIOO</h3>
+                                <p class="font-mono text-[12px] text-muted-gray mb-2">HTML • CSS</p>
+                                <p class="font-body-sm text-sm text-muted-gray/80 max-w-sm">Responsive Food Website</p>
+                            </div>
+                            <div class="flex gap-3 mt-2 md:mt-0 w-full md:w-auto">
+                                <button class="flex-1 md:flex-none px-4 py-2 rounded-lg bg-surface-container-highest border border-muted-gray/20 font-mono text-[11px] text-pure-white hover:border-[#bc13fe]/50 hover:bg-[#bc13fe]/10 transition-colors uppercase tracking-widest text-center" onclick="openModal('foodioo-modal')">
+                                    VIEW PROJECT
+                                </button>
+                                <a class="flex-1 md:flex-none px-4 py-2 rounded-lg bg-[#00f2ff]/10 border border-[#00f2ff]/30 font-mono text-[11px] text-[#00f2ff] hover:bg-[#00f2ff]/20 hover:border-[#00f2ff]/50 transition-colors uppercase tracking-widest flex items-center justify-center gap-1" href="https://foodioo.ccbp.tech/" rel="noopener noreferrer" target="_blank">
+                                    LIVE DEMO <span class="material-symbols-outlined text-[14px]" data-icon="arrow_outward">arrow_outward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group spotlight-card flex flex-col justify-between relative overflow-hidden rounded-2xl glass-panel p-4 hover:border-[#00f2ff]/50 hover:-translate-y-1 transition-all duration-500 w-full border border-muted-gray/10" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 533px; --mouse-y: 278.958740234375px;">
+                    <div class="relative z-10 flex flex-col h-full justify-between">
+                        <div class="flex justify-between items-start mb-4"><span class="font-mono text-[10px] tracking-widest text-[#00f2ff] uppercase bg-[#00f2ff]/10 px-2 py-1 rounded">#2 / DASHBOARD</span></div>
+                        <div class="aspect-[2/1] w-full rounded-xl overflow-hidden mb-6 relative border border-muted-gray/10">
+                            <div class="absolute inset-0 bg-deep-onyx/40 group-hover:bg-transparent transition-colors z-10 duration-500 pointer-events-none"></div><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhOXni-Ab6SgPNyhKXwQW2cbQlavLQfFbphuldP-AIhzV7bS19BQl_mNNW9YFSLYe_d04HConhH2kGx5MyMhCxpLWcmHmmHkJGFHCR_msA8PxgVGFwop3RiEpbTukr0p-wL1PlOvJQJI4mb9-LDC6GDBHKR12zobnGMjDylnNDg-JDMPYuiQL4Wriq_BwM4Bu8BqVAntoGiE6fH8q4kzLIIDK1jYvOgQ-kFttjXM0CXtA2Tk0IJGHcErLhFxA5mtXV9-o" alt="Nexus - A Student Command Center" class="w-full h-full object-cover object-top transform group-hover:scale-[1.02] transition-transform duration-700">
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-end px-2 gap-4">
+                            <div class="">
+                                <h3 class="font-headline-md text-headline-md text-pure-white mb-1">NEXUS</h3>
+                                <p class="font-mono text-[12px] text-muted-gray mb-2">TypeScript • PL/pgSQL
+                                <div>• CSS • JavaScript</div>
+                                </p>
+                                <p class="font-body-sm text-sm text-muted-gray/80 max-w-sm">A Student Command Center</p>
+                            </div>
+                            <div class="flex gap-3 mt-2 md:mt-0 w-full md:w-auto"><button class="flex-1 md:flex-none px-4 py-2 rounded-lg bg-surface-container-highest border border-muted-gray/20 font-mono text-[11px] text-pure-white hover:border-[#00f2ff]/50 hover:bg-[#00f2ff]/10 transition-colors uppercase tracking-widest text-center">VIEW PROJECT</button><a class="flex-1 md:flex-none px-4 py-2 rounded-lg bg-[#00f2ff]/10 border border-[#00f2ff]/30 font-mono text-[11px] text-[#00f2ff] hover:bg-[#00f2ff]/20 hover:border-[#00f2ff]/50 transition-colors uppercase tracking-widest flex items-center justify-center gap-1" href="#" rel="noopener noreferrer" target="_blank">LIVE DEMO <span class="material-symbols-outlined text-[14px]" data-icon="arrow_outward">arrow_outward</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tools Section (Bento Grid) -->
+        <section class="py-section-gap scroll-hidden scroll-show scroll-mt-[100px]" id="skills">
+            <div class="flex flex-col mb-12">
+                <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-pure-white uppercase tracking-tighter">
+                    TECH<br><span class="text-muted-gray">STACK</span>
+                </h2>
+                <p class="font-body-lg text-body-lg text-muted-gray mt-4 max-w-2xl">Technologies I'm learning, building with, and growing through.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+                <!-- HTML Card -->
+                <div class="spotlight-card bg-surface-container-lowest border border-muted-gray/20 rounded-sm p-8 flex flex-col justify-between hover:-translate-y-1 hover:border-[#00f2ff]/50 hover:shadow-[0_0_30px_rgba(0,242,255,0.15)] transition-all duration-500 group h-full" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 328px; --mouse-y: 186px;">
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-8">
+                            <span class="material-symbols-outlined text-4xl text-muted-gray group-hover:text-[#00f2ff] transition-all duration-300 group-hover:scale-110">code</span>
+                            <span class="font-mono text-[10px] tracking-widest text-pure-white bg-surface-container-highest border border-muted-gray/20 px-2 py-1 rounded-sm uppercase">BUILDING WITH</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-pure-white mb-1 group-hover:text-[#00f2ff] transition-colors">HTML</h3>
+                        <p class="font-mono text-[11px] text-muted-gray uppercase tracking-widest">FRONTEND</p>
+                    </div>
+                </div>
+                <!-- CSS Card -->
+                <div class="spotlight-card bg-surface-container-lowest border border-muted-gray/20 rounded-sm p-8 flex flex-col justify-between hover:-translate-y-1 hover:border-[#bc13fe]/50 hover:shadow-[0_0_30px_rgba(188,19,254,0.15)] transition-all duration-500 group h-full" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 161.671875px; --mouse-y: 150px;">
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-8">
+                            <span class="material-symbols-outlined text-4xl text-muted-gray group-hover:text-[#bc13fe] transition-all duration-300 group-hover:scale-110">layout</span>
+                            <span class="font-mono text-[10px] tracking-widest text-pure-white bg-surface-container-highest border border-muted-gray/20 px-2 py-1 rounded-sm uppercase">BUILDING WITH</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-pure-white mb-1 group-hover:text-[#bc13fe] transition-colors">CSS</h3>
+                        <p class="font-mono text-[11px] text-muted-gray uppercase tracking-widest">FRONTEND</p>
+                    </div>
+                </div>
+                <!-- PYTHON Card -->
+                <div class="spotlight-card bg-surface-container-lowest border border-muted-gray/20 rounded-sm p-8 flex flex-col justify-between hover:-translate-y-1 hover:border-[#00f2ff]/50 hover:shadow-[0_0_30px_rgba(0,242,255,0.15)] transition-all duration-500 group h-full" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 259.3359375px; --mouse-y: 31px;">
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-8">
+                            <span class="material-symbols-outlined text-4xl text-muted-gray group-hover:text-[#00f2ff] transition-all duration-300 group-hover:scale-110">terminal</span>
+                            <span class="font-mono text-[10px] tracking-widest text-pure-white bg-surface-container-highest border border-muted-gray/20 px-2 py-1 rounded-sm uppercase">LEARNING</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-pure-white mb-1 group-hover:text-[#00f2ff] transition-colors">PYTHON</h3>
+                        <p class="font-mono text-[11px] text-muted-gray uppercase tracking-widest">PROGRAMMING</p>
+                    </div>
+                </div>
+                <!-- SQL Card -->
+                <div class="spotlight-card bg-surface-container-lowest border border-muted-gray/20 rounded-sm p-8 flex flex-col justify-between hover:-translate-y-1 hover:border-[#bc13fe]/50 hover:shadow-[0_0_30px_rgba(188,19,254,0.15)] transition-all duration-500 group h-full" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 320px; --mouse-y: 178.509765625px;">
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-8">
+                            <span class="material-symbols-outlined text-4xl text-muted-gray group-hover:text-[#bc13fe] transition-all duration-300 group-hover:scale-110">database</span>
+                            <span class="font-mono text-[10px] tracking-widest text-pure-white bg-surface-container-highest border border-muted-gray/20 px-2 py-1 rounded-sm uppercase">LEARNING</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-pure-white mb-1 group-hover:text-[#bc13fe] transition-colors">SQL</h3>
+                        <p class="font-mono text-[11px] text-muted-gray uppercase tracking-widest">DATABASE</p>
+                    </div>
+                </div>
+                <!-- GIT Card -->
+                <div class="spotlight-card bg-surface-container-lowest border border-muted-gray/20 rounded-sm p-8 flex flex-col justify-between hover:-translate-y-1 hover:border-[#00f2ff]/50 hover:shadow-[0_0_30px_rgba(0,242,255,0.15)] transition-all duration-500 group h-full" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 179.671875px; --mouse-y: 134.5px;">
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-8">
+                            <span class="material-symbols-outlined text-4xl text-muted-gray group-hover:text-[#00f2ff] transition-all duration-300 group-hover:scale-110">account_tree</span>
+                            <span class="font-mono text-[10px] tracking-widest text-pure-white bg-surface-container-highest border border-muted-gray/20 px-2 py-1 rounded-sm uppercase">BUILDING WITH</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-pure-white mb-1 group-hover:text-[#00f2ff] transition-colors">GIT</h3>
+                        <p class="font-mono text-[11px] text-muted-gray uppercase tracking-widest">VERSION CONTROL</p>
+                    </div>
+                </div>
+                <!-- GITHUB Card -->
+                <div class="spotlight-card bg-surface-container-lowest border border-muted-gray/20 rounded-sm p-8 flex flex-col justify-between hover:-translate-y-1 hover:border-[#bc13fe]/50 hover:shadow-[0_0_30px_rgba(188,19,254,0.15)] transition-all duration-500 group h-full" onmousemove="handleMouseMove(event, this)" style="--mouse-x: 40.3359375px; --mouse-y: 62.6630859375px;">
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-8">
+                            <span class="material-symbols-outlined text-4xl text-muted-gray group-hover:text-[#bc13fe] transition-all duration-300 group-hover:scale-110">hub</span>
+                            <span class="font-mono text-[10px] tracking-widest text-pure-white bg-surface-container-highest border border-muted-gray/20 px-2 py-1 rounded-sm uppercase">BUILDING WITH</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-pure-white mb-1 group-hover:text-[#bc13fe] transition-colors">GITHUB</h3>
+                        <p class="font-mono text-[11px] text-muted-gray uppercase tracking-widest">COLLABORATION</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Line -->
+            <div class="mt-12 flex flex-col items-center justify-center progress-line-container scroll-hidden scroll-show">
+                <div class="font-mono text-[12px] text-muted-gray uppercase tracking-widest flex items-center gap-4 mb-4">
+                    <span class="hover:text-[#00f2ff] transition-colors cursor-default">LEARNING</span>
+                    <span class="text-muted-gray/30">→</span>
+                    <span class="hover:text-[#bc13fe] transition-colors cursor-default">BUILDING</span>
+                    <span class="text-muted-gray/30">→</span>
+                    <span class="hover:text-[#00f2ff] transition-colors cursor-default">IMPROVING</span>
+                </div>
+                <div class="w-full max-w-md h-[1px] bg-muted-gray/20 relative overflow-hidden">
+                    <div class="absolute top-0 h-full bg-gradient-to-r from-transparent via-[#00f2ff] to-[#bc13fe] progress-line-anim"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form Section -->
+        <section class="py-section-gap scroll-hidden scroll-show scroll-mt-[100px]" id="contact">
+            <div class="glass-panel rounded-2xl p-8 md:p-16 relative overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 mb-12">
+                    <!-- Left Column -->
+                    <div class="flex flex-col justify-start text-left">
+                        <span class="font-mono text-sm text-muted-gray uppercase tracking-widest mb-6">--contact</span>
+                        <h2 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-pure-white uppercase tracking-tighter leading-none">
+                            Let's Work<br><span class="text-acid-lime">Together</span>
+                        </h2>
+                    </div>
+                    <!-- Right Column: Interactive Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- GitHub Card -->
+                        <a class="group block p-8 rounded-xl bg-surface-container-low border border-muted-gray/20 hover:border-acid-lime hover:shadow-[0_0_20px_rgba(197,255,65,0.3)] transition-all duration-300 flex flex-col justify-between min-h-[200px]" href="https://github.com/Tirumareddisaipurnachand" rel="noopener noreferrer" target="_blank">
+                            <div>
+                                <span class="material-symbols-outlined text-4xl text-pure-white mb-4 block group-hover:text-acid-lime transition-colors">code</span>
+                                <h3 class="font-headline-md text-headline-md text-pure-white mb-2">GitHub</h3>
+                            </div>
+                            <span class="font-mono text-[12px] text-muted-gray uppercase tracking-widest group-hover:text-pure-white transition-colors flex items-center gap-2">Let's connect <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></span>
+                        </a>
+                        <!-- LinkedIn Card -->
+                        <a class="group block p-8 rounded-xl bg-surface-container-low border border-muted-gray/20 hover:border-acid-lime hover:shadow-[0_0_20px_rgba(197,255,65,0.3)] transition-all duration-300 flex flex-col justify-between min-h-[200px]" href="https://www.linkedin.com/in/saipurnachandtirumareddy/" rel="noopener noreferrer" target="_blank">
+                            <div>
+                                <span class="material-symbols-outlined text-4xl text-pure-white mb-4 block group-hover:text-acid-lime transition-colors">person</span>
+                                <h3 class="font-headline-md text-headline-md text-pure-white mb-2">LinkedIn</h3>
+                            </div>
+                            <span class="font-mono text-[12px] text-muted-gray uppercase tracking-widest group-hover:text-pure-white transition-colors flex items-center gap-2">Let's connect <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Bottom Banner -->
+                <div class="w-full bg-surface-container-highest/30 rounded-xl p-6 md:p-8 border border-muted-gray/10 text-center">
+                    <p class="font-body-lg text-body-lg text-pure-white/90 max-w-3xl mx-auto">
+                        Have an idea or just want to connect? Let’s build, learn, and create something meaningful together.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="w-full py-12 border-t border-muted-gray/10 bg-deep-onyx dark:bg-deep-onyx relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto gap-base fade-in duration-500">
+            <div class="font-headline-md text-pure-white tracking-tighter">
+                TIRUMAREDDI&nbsp; SAIPURNACHAND</div>
+            <p class="font-body-md text-body-md text-muted-gray text-center md:text-left order-3 md:order-none">
+                © 2026 tirumareddi saipurnachand All rights reserved. Built for the kinetic era.
+            </p>
+            <div class="flex gap-6 order-2 md:order-none">
+                <a class="font-label-sm text-label-sm text-muted-gray hover:text-burnt-orange hover:translate-y-[-2px] transition-all duration-300 uppercase tracking-widest" href="#"><br></a>
+                <a class="font-label-sm text-label-sm text-muted-gray hover:text-burnt-orange hover:translate-y-[-2px] transition-all duration-300 uppercase tracking-widest" href="#"><br></a>
+                <a class="font-label-sm text-label-sm text-muted-gray hover:text-burnt-orange hover:translate-y-[-2px] transition-all duration-300 uppercase tracking-widest" href="#"><br></a>
+                <a class="font-label-sm text-label-sm text-muted-gray hover:text-burnt-orange hover:translate-y-[-2px] transition-all duration-300 uppercase tracking-widest" href="#"><br></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Foodioo Modal -->
+    <div aria-modal="true" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4 sm:p-6" id="foodioo-modal" role="dialog">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-deep-onyx/80 backdrop-blur-sm transition-opacity" onclick="closeModal('foodioo-modal')"></div>
+        <!-- Modal Content -->
+        <div class="relative glass-panel rounded-2xl border border-muted-gray/20 w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl flex flex-col md:flex-row transform scale-95 opacity-0 transition-all duration-300" id="foodioo-modal-content">
+            <!-- Close button -->
+            <button class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-surface-container-highest/50 flex items-center justify-center text-muted-gray hover:text-pure-white hover:bg-surface-container-highest transition-colors" onclick="closeModal('foodioo-modal')">
+                <span class="material-symbols-outlined text-[20px]" data-icon="close">close</span>
+            </button>
+            <!-- Image Section -->
+            <div class="w-full md:w-2/5 h-64 md:h-auto relative border-b md:border-b-0 md:border-r border-muted-gray/10">
+                <img alt="FOODIOO" class="w-full h-full object-cover object-top opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4Z_vTTBB6bl7WaJB5aL8RPqot5T8kp0gQxRL89gn8toKwyhcXjWS5P7UeHzYate6R-gli00AmCWP5j-zFfzWyJXzcK7W_q_6Hw5teG62Gd-bubLsYTb-2VZrAV3u0NoL7HfJ78Uz6q7jvI-jbc-YBf-Njti0aI8lPsVMLrV2ifMvgKWubF8bVtNrxhmBLLFqu228ZdHaZ1BXjFDm5e09WZPL46lMDB5Uk6Loq_CXGjwpe8Cj2K7b8xw">
+                <div class="absolute inset-0 bg-gradient-to-t from-deep-onyx/80 to-transparent md:bg-gradient-to-r"></div>
+            </div>
+            <!-- Details Section -->
+            <div class="w-full md:w-3/5 p-8 flex flex-col justify-between">
+                <div>
+                    <div class="mb-6">
+                        <span class="font-mono text-[10px] tracking-widest text-[#bc13fe] uppercase bg-[#bc13fe]/10 px-2 py-1 rounded inline-block mb-3">PROJECT 01</span>
+                        <h2 class="font-headline-lg text-headline-lg text-pure-white mb-2">FOODIOO</h2>
+                    </div>
+                    <p class="font-body-md text-pure-white/90 mb-8 leading-relaxed">
+                        "A responsive food website built to strengthen my HTML and CSS fundamentals and explore modern web layouts."
+                    </p>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-mono text-[11px] text-muted-gray uppercase tracking-widest mb-2 border-b border-muted-gray/10 pb-1">Technologies</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 rounded bg-surface-container-highest text-pure-white text-[12px] font-mono border border-muted-gray/10">HTML5</span>
+                                <span class="px-3 py-1 rounded bg-surface-container-highest text-pure-white text-[12px] font-mono border border-muted-gray/10">CSS3</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-mono text-[11px] text-muted-gray uppercase tracking-widest mb-2 border-b border-muted-gray/10 pb-1">What I Learned</h4>
+                            <ul class="list-disc list-outside ml-4 space-y-1 font-body-sm text-[14px] text-muted-gray/90">
+                                <li class="">Structuring webpages with semantic HTML</li>
+                                <li class="">Building responsive layouts with CSS</li>
+                                <li class="">Working with spacing, typography, and visual hierarchy</li>
+                                <li class="">Creating reusable styling patterns</li>
+                                <li class="">Designing a responsive frontend experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-muted-gray/10">
+                    <a class="w-full inline-block text-center px-6 py-3 rounded-xl bg-[#00f2ff]/10 border border-[#00f2ff]/30 font-mono text-[12px] text-[#00f2ff] hover:bg-[#00f2ff]/20 hover:border-[#00f2ff]/50 transition-colors uppercase tracking-widest" href="https://foodioo.ccbp.tech/" rel="noopener noreferrer" target="_blank">
+                        LAUNCH LIVE SITE ↗
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Spotlight Effect logic
+        function handleMouseMove(e, element) {
+            const rect = element.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            element.style.setProperty('--mouse-x', `${x}px`);
+            element.style.setProperty('--mouse-y', `${y}px`);
+        }
+
+        // Modal Logic
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            const content = document.getElementById(`${modalId}-content`);
+            if (modal && content) {
+                modal.classList.remove('hidden');
+                // Small delay to allow display block to apply before animating opacity/transform
+                setTimeout(() => {
+                    content.classList.remove('scale-95', 'opacity-0');
+                    content.classList.add('scale-100', 'opacity-100');
+                }, 10);
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            const content = document.getElementById(`${modalId}-content`);
+            if (modal && content) {
+                content.classList.remove('scale-100', 'opacity-100');
+                content.classList.add('scale-95', 'opacity-0');
+
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = ''; // Restore background scrolling
+                }, 300); // Match transition duration
+            }
+        }
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                const modals = document.querySelectorAll('[role="dialog"]:not(.hidden)');
+                modals.forEach(modal => closeModal(modal.id));
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Intersection Observer for Scroll Animations ---
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('scroll-show');
+
+                        // Trigger staggered children if any
+                        const staggerChildren = entry.target.querySelectorAll('.scroll-hidden');
+                        staggerChildren.forEach(child => child.classList.add('scroll-show'));
+
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.scroll-hidden, .progress-line-container').forEach(el => {
+                // Only observe top-level hidden elements or sections
+                if (el.tagName === 'SECTION' || !el.closest('section').classList.contains('scroll-hidden') || el.classList.contains('progress-line-container')) {
+                    observer.observe(el);
+                }
+            });
+
+            // Ensure hero triggers immediately if in view
+            setTimeout(() => {
+                const hero = document.getElementById('hero');
+                if (hero) {
+                    hero.classList.add('scroll-show');
+                    hero.querySelectorAll('.scroll-hidden').forEach(child => child.classList.add('scroll-show'));
+                }
+            }, 100);
+
+            // --- Active Navigation Tracking ---
+            const sections = document.querySelectorAll("section[id]");
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            const navObserverOptions = {
+                root: null,
+                rootMargin: "-20% 0px -70% 0px", // Adjust based on header height
+                threshold: 0
+            };
+
+            const navObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute("id");
+                        navLinks.forEach(link => {
+                            link.classList.remove("text-acid-lime", "font-bold");
+                            link.classList.add("text-muted-gray");
+                            if (link.getAttribute("href") === `#${id}`) {
+                                link.classList.remove("text-muted-gray");
+                                link.classList.add("text-acid-lime", "font-bold");
+                            }
+                        });
+                    }
+                });
+            }, navObserverOptions);
+
+            sections.forEach(sec => navObserver.observe(sec));
+
+            // --- Mobile Menu Interaction ---
+            // (Assuming you might add a dropdown menu later, or to just handle clicks on existing elements)
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const navMenu = document.getElementById('nav-menu');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // If a mobile menu drawer is implemented, close it here.
+                    // For example: navMenu.classList.add('hidden');
+                });
+            });
+
+            // --- Mouse Trail Canvas Animation ---
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if (!prefersReducedMotion) {
+                const canvas = document.getElementById('trailCanvas');
+                const ctx = canvas.getContext('2d');
+
+                let width, height;
+                let particles = [];
+
+                // Mouse position
+                let mouse = {
+                    x: null,
+                    y: null
+                };
+
+                function resizeCanvas() {
+                    width = window.innerWidth;
+                    height = window.innerHeight;
+                    canvas.width = width;
+                    canvas.height = height;
+                }
+
+                window.addEventListener('resize', resizeCanvas);
+                resizeCanvas();
+
+                window.addEventListener('mousemove', (e) => {
+                    mouse.x = e.clientX;
+                    mouse.y = e.clientY;
+                    addParticle();
+                });
+
+                // For touch devices (optional, often better to disable on pure touch)
+                window.addEventListener('touchmove', (e) => {
+                    if (e.touches.length > 0) {
+                        mouse.x = e.touches[0].clientX;
+                        mouse.y = e.touches[0].clientY;
+                        addParticle();
+                    }
+                });
+
+                function addParticle() {
+                    particles.push({
+                        x: mouse.x,
+                        y: mouse.y,
+                        size: Math.random() * 3 + 1,
+                        life: 1, // 1 to 0
+                        speedX: (Math.random() - 0.5) * 2,
+                        speedY: (Math.random() - 0.5) * 2
+                    });
+                }
+
+                function animateTrail() {
+                    ctx.clearRect(0, 0, width, height);
+
+                    for (let i = 0; i < particles.length; i++) {
+                        let p = particles[i];
+
+                        ctx.beginPath();
+                        // Acid lime with variable opacity based on life
+                        ctx.fillStyle = `rgba(197, 255, 65, ${p.life})`;
+                        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                        ctx.fill();
+
+                        p.x += p.speedX;
+                        p.y += p.speedY;
+                        p.life -= 0.02; // Fade speed
+                        p.size *= 0.95; // Shrink speed
+
+                        if (p.life <= 0 || p.size <= 0.1) {
+                            particles.splice(i, 1);
+                            i--;
+                        }
+                    }
+
+                    requestAnimationFrame(animateTrail);
+                }
+
+                animateTrail();
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
